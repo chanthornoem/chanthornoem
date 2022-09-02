@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" id="mydate">
+    <button type="button" onclick="myfunction()">Check</button>
+    <p id="demo"></p>
+    <script>
+        function myfunction(){
+            var x = document.getElementById("mydate");
+            var cd=new Date(x.value);
+            if(cd.getDate()==6||cd.getDay()==0){
+                document.getElementById("demo").innerHTML="Weekend"
+
+            }
+            else{
+                document.getElementById("demo").innerHTML="Not Weekend"
+            }
+        }
+    </script>
+</body>
+</html>

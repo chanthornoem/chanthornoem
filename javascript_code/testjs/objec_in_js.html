@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>javascript objects</h2>
+    <p>There are two different ways to access an object property.</p>
+    <p>you can use persion.property or persion["property"].</p>
+    <p id="demo"></p>
+    <Script>
+        //create an object:
+        const persion = {
+            firstName: "Jonh",
+            lastName: "Deo",
+            id: 5566,
+        };
+        //Desplay some data from the object:
+        document.getElementById("demo").innerHTML = persion["firstName"] + "" + persion["lastName"] + "" + persion["id"];
+    </Script>
+</body>
+
+</html>

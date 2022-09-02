@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    width: 800px;
+    height: 600px;
+    margin-left: 20%;
+    /* background-image: url("D:/image/Cat1.jpg"); */
+    background-color: gray;
+}
+
+.container {
+    width: 800px;
+    height: 50px;
+    background-color: green;
+}
+
+.menu-bar ul {
+    padding: 3%;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu-bar ul li {
+    display: inline-block;
+}
+
+.menu-bar ul li a {
+    color: #fff;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: brown;
+}
+
+a:active {
+    background-color: blue;
+}

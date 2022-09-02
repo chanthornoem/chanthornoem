@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            background-color: gray;
+            width: 300px;
+            height: 300px;
+            margin-left: 40%;
+        }
+        #h{
+            width: 100px;
+            height: 30px;
+            margin-top: 5%;
+            border-radius: 5%;
+        }
+        #a{
+            width: 100px;
+            height: 30px;
+          margin-left: 3%; 
+          border-radius: 5%; 
+        }
+        input:hover{
+            color: red;
+            background-color: skyblue;
+
+        }
+        .Equal{
+            width: 40px;
+            height: 30px;
+            margin-left: 15%;
+        }
+        #result{
+            width: 50px;
+            height: 30px;
+            border-radius: 10%;
+        }
+        .div2{
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            margin-left: 18%;
+            background-color: yellowgreen;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"><br>
+        <div class="div2"><b>គណនាក្រឡាផ្ទៃត្រីគោណ</b></div><br>
+    <label>កម្ពស់</label>
+    <input type="text" id="h"><br>
+    <label>បាត</label>
+    <input type="text" id="a"><br>
+    <input type="button" value="=" onclick="calladd()"  class="Equal"><br>
+    <label>ក្រលាផ្ទៃត្រីកោណ​៖</label>
+    <input type="text" id="result">
+    <script type="text/javascript">
+        function calladd(){
+
+            var s,a,h;
+            a = parseFloat(document.getElementById("a").value);
+            h = parseFloat(document.getElementById("h").value);
+            s = (a * h)/2;
+            document.getElementById("result").value=s;
+        }
+        
+    </script>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputstudent</title>
+</head>
+<body>
+    <input type="text" id="Name">
+    <input type="text" id="Email">
+    <input type="text" id="Password">
+    <input type="button" value="add" onclick="addarray()">
+    <input type="button" value="show" onclick="showarray()">
+    <p id="names"></p>
+    <p id="emails"></p>
+    <p id="passwords"></p>
+    <script>
+        var name=new Array();
+        var email=new Array();
+        var Password=new Array();
+        var i=0;
+        function addarray(){
+            //for(i=0;i<3;i++){
+                name[i]=document.getElementById("name").value;
+                email[i]=document.getElementById("email").value;
+                Password[i]=document.getElementById("password").value;
+                i++;
+            //}
+
+        }
+        function showarray(){
+            var a="";
+            var b="";
+            var c="";
+            for(var j = 0;j < name.length;j++){
+                a+=""+name[j];
+                b+=""+email[j];
+                c+=""+Password[j];
+
+            }
+            document.getElementById("names").innerHTML="name"+a;
+            document.getElementById("emails").innerHTML="email"+b;
+            document.getElementById("passwords").innerHTML="password"+c;
+        }
+    </script>
+</body>
+</html>

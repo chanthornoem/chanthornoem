@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="score">
+    <button type="button" onclick="checknum()">submit</button>
+    <p id="demo"></p>
+    <script>
+        function checknum(){
+            var x = document.getElementById("score").value;
+            var number;
+            if(x<1){
+                number="score is not found!!";
+                document.getElementById("score").style.color="red";
+            }
+            else if(x>=1 && x<=100){
+                number="score is correct!";
+                document.getElementById("score").style.color="blue";
+
+            }
+            document.getElementById("demo").value=number;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My web page</h1>
+    <p id="first"></p>
+    <script>
+        let n =5;
+        let string="";
+        //External Loop
+        for(let i = 0;i<n;i++){
+            //printing space
+            for(let j=0;j<i;j++){
+                string+="&nbsp;";
+            }
+            //printing star
+            for(let k=0;k<2*(n-i)-1;k++){
+                string+="*";
+            }
+           string+="<br>"; 
+        }
+        document.getElementById("first").innerHTML=string;
+    </script>
+</body>
+</html>
